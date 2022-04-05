@@ -1,9 +1,9 @@
 # revisao_supercomp
 
-'''bash
+```bash
 g++ -g -Wall -O3 stocks.cpp -o stocks
 ./stocks < stocks.seq
-'''
+```
 
 
 
@@ -20,9 +20,9 @@ The epsilon-greedy, where epsilon refers to the probability of choosing to explo
 
 ### Valgrind
 
-'''bash
+```bash
 valgrind --tool=callgrind ./sum
-'''
+```
 
 As others have said, the issue is the store to the memory location in the array: x[i][j]. Here's a bit of insight why:
 
